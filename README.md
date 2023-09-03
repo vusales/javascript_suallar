@@ -60,3 +60,4 @@ Undefined - bu (error deyim) error əsasən dəyişən təyin olunub amma heç b
 Undeclared - bu error biz yaradılmamış və ya təyin edilməmiş dəyişəni istifadə etmək istəyəndə yaranır. Undeclared dəyişəninin tipi undefined-dir. Global dəyişəndir.
 
 # javascript_suallar
+### to be continued :) 
