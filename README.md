@@ -57,7 +57,7 @@ Sual-5 ---- undeclared və undefined dəyişənləri haqqında.
 
 Cavab-5 ----
 
-Undefined - bu (error deyim) error əsasən dəyişən təyin olunub amma heç bir dəyər mənimsədilmədiyi zaman yaranır. Undefined keyüord deyil. 
+Undefined - bu (error deyim) error əsasən dəyişən təyin olunub amma heç bir dəyər mənimsədilmədiyi zaman yaranır. Undefined keyword deyil. 
 
 Undeclared - bu error biz yaradılmamış və ya təyin edilməmiş dəyişəni istifadə etmək istəyəndə yaranır. Undeclared dəyişəninin tipi undefined-dir. Global dəyişəndir.
 
