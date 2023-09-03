@@ -1,4 +1,6 @@
 # javascript_suallar
+Javascript proqramlama dili Brendan Eich tərəfindən Netscape şirkəti üçün 1995-ci ildə (js mənlə yaşıddır:) yaradılıb.
+
 
 Sual-1 ---- Javascript nədir ? 
 Cavab-1 ----
