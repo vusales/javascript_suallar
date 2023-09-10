@@ -81,15 +81,31 @@ let və const-da isə yalnız dəyişənin təyin edilməsi başa düşülür am
 
 Məsələn baxın: 
 
+
 console.log(x) ; //  cavab: undefined 
+
 var x= 10 ;  
+
 console.log(x) ; // cavab 10 
 
 
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 console.log(y);
+
 // ReferenceError: Cannot access 'y' before initialization
+
 let y = 10
+
 // və ya const y =10 ;
+
 console.log(y);
 
 
@@ -106,11 +122,15 @@ let/const dəyişənlərinin hoisted olub amma müdaxile edilə bilməməsi pros
 
 Dinamik dillərdə dəyişənin tipi run-time (kod işləyəndə) yoxlanılır, statik dillərdə isə dəyişənin tipi compile olunduqda yoxlanılır.Javascript dinamik dildir. Yəni biz kodlarda
 
+
 x=5; 
+
 
 yazdıqdan sonra , 
 
+
 x= "hello qardash"; 
+
 
 yaza bilirik. Fikir verdizsə x-in tipi ilk öncə number sonra string olaraq dəyişdi.
  
@@ -119,20 +139,29 @@ yaza bilirik. Fikir verdizsə x-in tipi ilk öncə number sonra string olaraq d�
 
 Misalla baslayaq , deməli biz 
 
+
 let x=5;
+
 
 yazdıqda x dəyişənini təyin edib ona dəyər mənimsətdik. Arxa planda isə "=" assign operatoru yaddaşda 2 dəyərini saxlamaq üçün bir yer ayırır və x dəyişəni birbaşa həmin yeri göstərir.
 
+
 let y = x ; 
 
+
 yazdıqda "=" operatoru yenə yaddaşda yeni bir yer tutur ora 2 dəyərini yazır və y yaddaşdakı yerin ünvanını göstərir.Yəni x başqa ünvanı, y başqa unvanı göstərir.
+
+
 
 let obyekt =  {
     "name" : "Vusala" , 
     "surname": "Safarova" , 
 }
 
+
 let obyektIkinci = obyekt ; 
+
+
 
 bu misalda isə obyekt yarandıqda yaddaşda bir yer tutur və yaddaşdakı yerin ümvanını göstərir. Burada "=" operatoru obyektIkinci-yə birbaşa obyekt-in yaddaşdakı yerinin ünvanını ötürür. Başqa sözlə yazsam, obyekt-in referansını obyektİkinciyə ötürürür.
 
@@ -143,21 +172,42 @@ bu misalda isə obyekt yarandıqda yaddaşda bir yer tutur və yaddaşdakı yeri
 
 İİFE funksiyalar təyin olunan kimi icra edilən funksiyalardır. Sintaksisi aşağıdakı kimidir. Başqa proqramlama dillərində bu funksiyalara anonim funksiyalar da deyildiyini bilirəm. 
 
+
+
 (function(){
+
+
     // kodlarını yaz icra etsin
+
+    
 })();
+
+
 
 # sual 10 ---- HOF: Higher Order Functions 
 # cavab-10 ----
 
 Qısaca desək funksiya return edən funksiyalardır. 
 
+
 function higherOrder2() {
+
+
   return function() {
+
+  
     return "kodlarını yaz icra etsin";
+
+    
   }
+
+  
 }      
+
+
 var x = higherOrder2();
+
+
 x()   // nəticə "kodlarını yaz icra etsin"
 
 
