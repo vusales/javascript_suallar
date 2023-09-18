@@ -212,6 +212,49 @@ x()   // nəticə "kodlarını yaz icra etsin"
 
 
 
+# sual 11 ---- Scope nədir ?
+# cavab-11 ----
+Javascriptdə scope kodun müxtəlif hissələrində dəyişənlərin və funksiyaların əlçatanlığını müəyyən edir.
+
+Js-də 3 tip scope var :
+
+-Global Scope
+-Local və ya Function Scope
+-Block Scope
+
+
+Global scope - Global scope-da təyin edilmiş dəyişən və funksiyalara kodun istənilən yerindən girişimiz olur. Yəni istənilən yerdə funksiyanı çağırıb işlədə bilərik və ya dəyişənləri istifadə edə bilərik. 
+
+
+Function Scope - Funksiyanın içində təyin edilən funksiya və ya dəyişənlərdir. Əgər biz hər hansı bir dəyişəni funksiyanın içində təyin etmişiksə , funksiyanın çölündə həmin dəyişəni istifadə edə bilməyəcəyik. 
+
+məsələn :
+
+function bizimFunk () {
+  var a = 5 ; 
+
+
+  function insideFunction () {
+    return a+5 ; 
+  }
+
+}
+
+
+console.log(a);  /referance error 
+insideFunction(); /referance error 
+
+
+Block Scope: Block scope ancaq let və const-la təyin edilmiş dəyişənlərdə olur. var ilə təyin edilmiş dəyişənlərin block skopu olmur. Block scope {} bloklar arasında təyin edilmiş dəyişənlərdir və həmin blokların çölündə dəyişənləri istifadə etmək olmur. 
+
+Scope Chain ( Scope zənciri :)
+
+![Alt text](image-1.png)
+
+Javascript dəyişənləri tapmaq üçün scop-lardan istifadə edir. 
+Məsələn: 
+Şəkildə əgər scope -1 -də bir dəyişəndən istifadə etmişik amma həmin dəyişən scope-1-də təyin edilməyib. Onda javascript bir üst scope-da həmin dəyişəni axtarır , tapmasa scope-3-un icine kecir və həmin dəyişəni scope3-də axtarır və ən sonda global scop-u axtarır, tapsa istifadə edir tapmasa error. 
+
 
 
 # javascript_suallar
