@@ -218,9 +218,9 @@ Javascriptdə scope kodun müxtəlif hissələrində dəyişənlərin və funksi
 
 Js-də 3 tip scope var :
 
--Global Scope
--Local və ya Function Scope
--Block Scope
+- Global Scope
+- Local və ya Function Scope
+- Block Scope
 
 
 Global scope - Global scope-da təyin edilmiş dəyişən və funksiyalara kodun istənilən yerindən girişimiz olur. Yəni istənilən yerdə funksiyanı çağırıb işlədə bilərik və ya dəyişənləri istifadə edə bilərik. 
